@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <form action="/home/home/" method="POST">
+    {% csrf_token %}
+    <span>输入用户名</span> <input type="text" value="" name="username">
+        <input type="submit" style="height: 20px;width: 40px;" value="登录">
+    </form>
+
+{% endblock main %}
